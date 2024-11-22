@@ -65,7 +65,7 @@ class InstallerApp(QtWidgets.QWidget):
             checkbox_layout = QtWidgets.QHBoxLayout(mod_group_box)
             # Кнопка для выделения/снятия выделения всех чекбоксов
             self.toggle_button = QtWidgets.QPushButton("Выделить/Отменить все", self)
-            self.toggle_button.setStyleSheet("background-color: #4682B4; color: black; font-size: 20px; padding: 10px 20px; height:70px;")
+            self.toggle_button.setStyleSheet("background-color: #4682B4; color: black; font-size: 20px; padding: 10px 20px; height:70px;width:10px")
 
 
             # Функция для переключения состояния чекбоксов
@@ -91,7 +91,7 @@ class InstallerApp(QtWidgets.QWidget):
             # Группа 1: Русификация субтитров и радио
             group1_layout = QtWidgets.QVBoxLayout()
             self.checkbox_dogtown = QtWidgets.QCheckBox('Русификация субтитров ДогТауна', self)
-            self.checkbox_radio = QtWidgets.QCheckBox("Добавить радио 'Шансон'", self)
+            self.checkbox_radio = QtWidgets.QCheckBox("Добавить радио 'Шансон' (опционально)", self)
             self.checkbox_dogtown.setChecked(True)
             self.checkbox_radio.setChecked(True)
             group1_layout.addWidget(self.checkbox_dogtown)

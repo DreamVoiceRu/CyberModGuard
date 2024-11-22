@@ -1,0 +1,6 @@
+requests
+zipfile
+psutil
+shutil
+PyQt5
+winreg
